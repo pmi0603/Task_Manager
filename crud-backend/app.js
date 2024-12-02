@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api/tasks', taskRoutes);
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Assuming your React app runs on port 3000
+  origin: 'http://localhost:3000',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
